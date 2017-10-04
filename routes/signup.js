@@ -1,10 +1,10 @@
 /**
  * Created by Administrator on 2017/8/5 0005.
  */
-var express = require('express');
-var router = express().Router;
+let express = require('express');
+let router = express().Router;
 
-var checkNotLogin = require('../middlewares/check').checkNotLogin;  //判断是否已经登陆
+let checkNotLogin = require('../middlewares/check').checkNotLogin;  //判断是否已经登陆
 
 // GET /signup 注册页
 router.get('/', checkNotLogin, function (req, res, next) {
